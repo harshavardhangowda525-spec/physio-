@@ -1,0 +1,47 @@
+{
+  "name": "physio-home-enquiry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Appointment-enquiry assistant, staff dashboard and notifications for Physiotherapy Treatment at Home",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "staff:create": "tsx scripts/create-staff.ts",
+    "retention:purge": "tsx scripts/retention-purge.ts",
+    "notifications:retry": "tsx scripts/retry-notifications.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "drizzle-orm": "^0.45.4",
+    "jose": "^6.2.12",
+    "next": "^15.5.28",
+    "nodemailer": "^10.1.7",
+    "pg": "^8.23.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "dotenv": "^18.0.8",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.28",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5"
+  }
+}
